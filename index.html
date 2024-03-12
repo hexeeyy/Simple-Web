@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSpace</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header>
+        <h1>CS<sup>TM</sup></h1>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header class="home" id="home">
+    <section>
+        <img src="bg.jpg" id="bg">
+        <img src="moon.png" id="moon">
+        <img src="mountain.png" id="mountain">
+        <img src="road.png" id="road">
+        <h2 id="text">CodeSpace</h2>
+    </section>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <img src="art-2907939.png" id="pic">
+        <h3 class="title">About Us</h3>
+                    <div class="content">
+
+                        <p> At CODESPACE, we believe in unlocking the full potential of computer engineering students by briditing the gap between academic 
+                            learning and real-world tech industry demands. Founded on the principle that quality education should be accessible to everyone, we offer an expansive array of free online resources, 
+                            expert-led seminars, and hands-on lessons designed to empower the next generation of tech innovators.</p> <br>
+                        
+                        <p> Our mission is simple: to provide students worldwide with the tools, knowledge, and network they need to thrive in the fast-paced tech landscape. 
+                            Through a carefully curated blend of downloadable content, interactive webinars, and direct insights from industry leaders, 
+                            we ensure our learners are always at the forefront of technology.</p> <br>
+                        
+                        <p> Join us at CODESPACE, where your journey towards becoming a tech industry luminary begins. 
+                            Explore, learn, and grow with us as we navigate the exciting world of computer engineering together.</p>
+                    </div>
+    </section>
+
+    <!-- services section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">Services</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Web Design</div>
+                        <p style="font-size: 11px;"> Dive into the world of visually stunning and user-friendly websites with Mark Hexilon Payno. 
+                            As a skilled Web Designer, I transform ideas into captivating online experiences. 
+                            Elevate your digital presence and leave a lasting impression on visitors.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Advertising</div>
+                        <p style="font-size: 11px;"> Ignite your brand's visibility with strategic and compelling advertising crafted by Hex. 
+                            Whether it's social media campaigns, print materials, or online promotions, 
+                            I specialize in creating impactful visuals and messages that resonate with your target audience.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Apps Design</div>
+                        <p style="font-size: 11px;"> Navigate the mobile landscape with sleek and intuitive applications designed by [Your Name]. 
+                            As an App Design Virtuoso, I merge functionality with aesthetics, ensuring that your app not only 
+                            meets but exceeds user expectations. Let's turn your app ideas into a seamless digital experience. </p>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Hope you're well! I'm Hexilon, a skilled web developer with expertise in HTML, 
+                        CSS, JavaScript, PHP, and more. I've successfully delivered projects blending creativity with functionality.</p> 
+                    <br>
+                    <p>Let's discuss how I can contribute to your upcoming project. Eager to connect and explore possibilities.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Mark Hexilon</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Binangonan, Rizal</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">hexilonpayno@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message me:</div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <a href="#">HexilonPayno</a> | <span class="far fa-copyright"></span> 2024 All rights reserved.</span>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="control.js" defer ></script>
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 12px;
+    
+}
+::-webkit-scrollbar-track {
+    background: #0a2a43;
+    border-radius: 20px;
+    box-shadow: 0 0 1px 1px #111, inset 0 0 4px rgba(0,0,0,0.3);
+    
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: rgb(0, 0, 0);/* linear-gradient(left, #040303, #ffe8e8, #676767); */
+    box-shadow: inset 0 0 1px 1px #646464;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(248, 255, 248);
+}
+
+header {
+    background-color: #9e8a8a32;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 98%;
+    padding: 1%;
+    position: fixed;
+    z-index: 99999;
+}
+
+header h1{
+    font-size: 40px;
+    color: #ffffff;
+    padding-right: 40%;
+}
+
+header h1 {
+    animation: glowing 4s infinite; /* Change the duration as needed */
+    /* position: relative; */
+  }
+
+  /* Define the animation keyframes for the glowing effect */
+  @keyframes glowing{
+    20% {
+      text-shadow: 0 0 10px rgb(121, 121, 121); /* Initial shadow color and size */
+      /* left: 0; /* Initial position */ 
+    }
+    50% {
+      text-shadow: 0 0 20px rgb(144, 144, 144), 0 0 30px rgb(144, 144, 144), 0 0 40px rgb(209, 219, 224); /* Intermediate sizes and color */
+      /* left: 50px; /* Move 50 pixels to the right */ 
+    }
+    70% {
+      text-shadow: 0 0 10px rgb(80, 79, 80); /* Return to the original size and color */
+      /* left: 0; /* Return to the original position */ 
+    }
+}
+
+header sup{
+    font-size: 10px;
+}
+
+header nav{
+    display: flex;
+    gap: 30px;
+}
+
+header nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 99px;
+    transition: 0.6s;
+}
+header nav a.active {
+    background-color: #ffffff;
+    color: #0a2a43;
+}
+header nav a:hover{
+    background-color: #ffffff;
+    color: #0a2a43;
+}
+header nav:hover > a:not(:hover){
+    background: none;
+    color: #ffffff;
+}
+
+body{
+    background-color: #0a2a43;
+    min-height: 1500px;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #0a2a43, transparent);
+    z-index: 10000;
+}
+section:after {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a2a43;
+    z-index: 10000;
+    mix-blend-mode: color;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#text {
+    position: relative;
+    color: #fff;
+    font-size: 10em;
+    z-index: 1;
+}
+#road {
+    z-index: 2; 
+}
+
+.about {
+    display: flex;
+    position: relative;
+    color: #ffffff;
+    text-align: justify;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    text-indent: 40px;
+}
+
+.about .title {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 2rem;
+    margin-left: 20rem;
+    color: #0a2a43;
+    background-color: #0a2a43;
+    text-shadow: -1px -1px 0 #fffcfc, 1px -1px 0 #fffdfd, -1px 1px 0 #ffffff, 1px 1px 0 #fffcfc;
+}
+
+.about .content {
+    display: inline;
+    margin-right: 3rem;
+    margin-left: 25rem;
+}
+
+#pic{
+    width: 400px;
+    height: 500px;
+    padding: 2rem;
+}
+
+
+
